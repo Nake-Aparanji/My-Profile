@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Education</title>
+        <link rel="stylesheet" href="styles/header.css">
+
+        <style>
+            body {
+                /* Basic reset for body margins and padding */
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh; /* Use the full height of the viewport */
+
+                background-color: black;
+                font-family: Arial, Helvetica, sans-serif
+            }
+            table {
+                border-collapse: collapse;
+                width: 80%;
+                margin: auto; /* Center the table horizontally */
+            }
+            th, td {
+                border: 1px solid yellow; /* Add borders to table cells */
+                padding: 8px;
+                text-align: left;
+
+                color: white;
+            }
+
+            th {
+                text-align: center;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <header class="header">
+            <div class="center-header">
+                <div>Education</div>
+            </div>
+            <div class="right-header">
+                <div id="home">Home</div>
+            </div>
+        </header>
+
+        <table>
+            <tr>
+                <th>Degree</th>
+                <th>Institution</th>
+                <th>Location</th>
+                <th>Dates</th>
+                <th>CGPA</th>
+            </tr>
+            <tr>
+                <td>Master of Science: Computer Science</td>
+                <td>University of Memphis</td>
+                <td>Memphis, TN, US</td>
+                <td>August 2022 – December 2023</td>
+                <td>3.95/4</td>
+            </tr>
+            <tr>
+                <td>Bachelor of Technology: Computer Science & Engineering</td>
+                <td>Gitam Institute of Technology</td>
+                <td>Visakhapatnam, India</td>
+                <td>May 2018 – May 2022</td>
+                <td>8.81/10</td>
+            </tr>
+        </table>
+    </body>
+
+    <script>
+        document.getElementById('home').addEventListener('click', function() {
+                window.location.href = 'index.html';
+        });
+    </script>
+</html>

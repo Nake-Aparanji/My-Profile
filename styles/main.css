@@ -1,0 +1,33 @@
+main {
+    color: white;
+    margin-top: 100px; /* Adjust top margin to account for the fixed header height */
+    margin-left: 260px; /* Adjust left margin to account for the sidebar width */
+    padding: 20px;
+}
+
+.role {
+    background-color: red;
+
+    display: inline;
+    padding: 5px;
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.profile-pic {
+    margin-left: 150px;
+    height: 500px;
+    width: auto;
+    border-radius: 250px;
+}
+
+.intro-container {
+    margin-top: 10px;
+
+    font-size: 20px;
+    font-style: italic;
+
+
+}

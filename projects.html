@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Projects</title>
+
+        <link rel="stylesheet" href="styles/header.css">
+
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                padding: 20px;
+                background-color: black;
+            }
+
+            .projects-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                gap: 20px;
+                margin-top: 100px;
+            }
+
+            .project-card {
+                background-color: #07707d;
+                border: 1px solid yellow;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                width: calc(33% - 20px);
+                margin-bottom: 20px;
+            }
+
+            .project-card h2 {
+                margin-top: 0;
+                color: white;
+            }
+
+            .tech {
+                font-style: italic;
+                color: white;
+            }
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            ul li {
+                padding: 5px 0;
+                color: black;
+                font-weight: 600;
+            }
+
+            @media (max-width: 768px) {
+                .projects-container {
+                    flex-direction: column;
+                }
+
+                .project-card {
+                    width: auto;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <div class="center-header">
+              <div>Projects</div>
+            </div>
+            <div class="right-header">
+              <div id="home">Home</div>
+            </div>
+          </header>
+
+          <div class="projects-container">
+            <div class="project-card">
+                <h2>Kung-Fu Master using RL</h2>
+                <p class="tech">Python, TensorFlow, Keras | Feb 2023 – May 2023</p>
+                <ul>
+                    <li>Successfully trained a Kung-Fu Master agent using the vanilla Deep Q-Network (DQN) algorithm.</li>
+                    <li>Implemented 2 distinct variants of the DQN algorithm with MLP and CNN architectures.</li>
+                    <li>Conducted performance analysis, CNN significantly outperformed MLP in learning and gameplay.</li>
+                </ul>
+            </div>
+            <div class="project-card">
+                <h2>Chef Search</h2>
+                <p class="tech">Java, MySQL, HTML, CSS, Spring Boot, Hibernate/JPA, Thymeleaf | Sept 2023 – Nov 2023</p>
+                <ul>
+                    <li>Registered chefs post their ads, users can filter based on dishes, background, and hourly charges.</li>
+                    <li>Implemented a RESTful API for CRUD operations on chef ads.</li>
+                    <li>Leveraged Hibernate/JPA for efficient data access and management.</li>
+                    <li>Designed user-friendly sign-in/out form with Spring MVC validation for security.</li>
+                </ul>
+            </div>
+            <div class="project-card">
+                <h2>Real-Time Log Data Streaming</h2>
+                <p class="tech">Java, Apache Kafka, Spring Boot, Thymeleaf | Oct 2023 – Dec 2023</p>
+                <ul>
+                    <li>Implemented a real-time log data streaming solution using Apache Kafka and Java.</li>
+                    <li>Integrated consumer logic into a Spring Boot project for live log data visualization.</li>
+                    <li>Demonstrated steady ingestion rates and minimal latency in performance evaluation.</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        document.getElementById('home').addEventListener('click', function() {
+                window.location.href = 'index.html';
+        });
+    </script>
+</html>

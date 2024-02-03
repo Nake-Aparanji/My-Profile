@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Certifications</title>
+
+        <link rel="stylesheet" href="styles/header.css">
+
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                padding: 20px;
+                background-color: black;
+            }
+    
+            .certifications-container {
+                text-align: center;
+                padding: 20px;
+            }
+    
+            .certification-card {
+                display: inline-block;
+                background-color: #07707d;
+                border: 1px solid yellow;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                margin: 10px;
+                padding: 20px;
+                width: calc(50% - 40px);
+                vertical-align: top;
+            }
+    
+            .certification-icon {
+                font-size: 48px;
+                margin-bottom: 10px;
+            }
+    
+            .certification-content h2 {
+                color: white;
+                margin: 0;
+            }
+    
+            .certification-content p {
+                color: white;
+                font-style: italic;
+            }
+    
+            @media (max-width: 768px) {
+                .certification-card {
+                    width: auto;
+                }
+            }
+
+            .courseraCertificate,
+            .rhcsaCertificate {
+                color: white;
+                cursor: pointer;
+                font-style: normal;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <div class="center-header">
+              <div>Certifications</div>
+            </div>
+            <div class="right-header">
+              <div id="home">Home</div>
+            </div>
+          </header>
+
+          <div class="certifications-container">
+            <h1>My Certifications</h1>
+            <div class="certification-card">
+                <div class="certification-icon">🏆</div> <!-- Placeholder icon -->
+                <div class="certification-content">
+                    <h2>Coursera</h2>
+                    <p>Completed 40+ Coursera Certificates on various Computer Science fields. | 2018 – 2022</p>
+                    <p><a class="courseraCertificate" href="https://drive.google.com/drive/folders/1X49c527hNehnmZ068b4BZOKM1HBZE9WT?usp=sharing" target="_blank">Certificates</a></p>
+                </div>
+            </div>
+            <div class="certification-card">
+                <div class="certification-icon">🔑</div> <!-- Placeholder icon -->
+                <div class="certification-content">
+                    <h2>Red Hat Certified System Administration (RHCSA)</h2>
+                    <p>RHCSA Certificate | Expires July 2024</p>
+                    <p><a class="rhcsaCertificate" href="https://drive.google.com/drive/folders/15B73g7CYmd5LXnCscilSqbZJMZTTzws5?usp=sharing" target="_blank">Certificate</a></p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        document.getElementById('home').addEventListener('click', function() {
+                window.location.href = 'index.html';
+        });
+    </script>
+</html>

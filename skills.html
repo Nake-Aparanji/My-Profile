@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Skills</title>
+
+        <link rel="stylesheet" href="styles/header.css">
+
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                padding: 20px;
+                background-color: black;
+            }
+
+            .skills-grid {
+                margin-top: 100px;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 20px;
+            }
+
+            .skill-category {
+                background-color: #07707d;
+                color: white;
+
+                border: 1px solid #cccccc;
+                border-radius: 5px;
+                padding: 20px;
+                box-shadow: 0 2px 4px yellow;
+            }
+
+            .skill-category h2 {
+                color: black;
+                font-size: 25px;
+                margin-top: 0;
+            }
+
+            .skill-category ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            .skill-category ul li {
+                border-bottom: 1px solid #eeeeee;
+                padding: 8px 0;
+            }
+
+            .skill-category ul li:last-child {
+                border-bottom: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="center-header">
+              <div>Skills</div>
+            </div>
+            <div class="right-header">
+              <div id="home">Home</div>
+            </div>
+          </header>
+
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h2>Programming Languages</h2>
+                <ul>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>R</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h2>DBMS</h2>
+                <ul>
+                    <li>SQL/NoSQL</li>
+                    <li>MySQL</li>
+                    <li>PostgreSQL</li>
+                    <li>MongoDB</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h2>Web Development</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Node.js</li>
+                    <li>RESTful APIs</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h2>Frontend Technologies</h2>
+                <ul>
+                    <li>ReactJS</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h2>Server-side Frameworks</h2>
+                <ul>
+                    <li>Spring MVC</li>
+                    <li>Spring Boot</li>
+                    <li>Hibernate</li>
+                    <li>Thymeleaf</li>
+                    <li>Ruby on Rails</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h2>Big Data Streaming/Analytics</h2>
+                <ul>
+                    <li>Apache Kafka</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h2>Version Control</h2>
+                <ul>
+                    <li>Git</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h2>Cloud</h2>
+                <ul>
+                    <li>AWS</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h2>ML and AI Frameworks</h2>
+                <ul>
+                    <li>Pandas</li>
+                    <li>NumPy</li>
+                    <li>Matplotlib</li>
+                    <li>Seaborn</li>
+                    <li>Scikit-learn</li>
+                    <li>TensorFlow</li>
+                    <li>Keras</li>
+                    <li>PyTorch</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h2>Build Tools and IDE</h2>
+                <ul>
+                    <li>Maven</li>
+                    <li>Gradle</li>
+                    <li>IntelliJ</li>
+                    <li>VSCode</li>
+                    <li>Eclipse</li>
+                    <li>Android Studio</li>
+                    <li>Jupyter Notebook</li>
+                    <li>R Studio</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        document.getElementById('home').addEventListener('click', function() {
+                window.location.href = 'index.html';
+        });
+    </script>
+</html>

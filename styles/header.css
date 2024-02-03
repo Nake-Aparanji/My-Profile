@@ -1,0 +1,59 @@
+.header {
+    display: flex; /* Enables Flexbox */
+    justify-content: space-between; /* Distributes space between and around content items */
+    align-items: center; /* Centers items vertically in the container */
+    height: 100px;
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    background-color: #301c1c;
+    color: white;
+}
+
+.center-header {
+    flex: 1; /* Allows the center-header to grow and take up available space */
+    text-align: center; /* Centers the text inside the center-header div */
+    display: flex;
+    justify-content: center;
+
+    margin-left: 200px;
+}
+
+.center-header div {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.right-header {
+    display: flex; /* Enables Flexbox for right-header, making its children align in a row */
+    justify-content: flex-end; /* Aligns the right-header content to the right */
+    
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.right-header div {
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.right-header div:hover { 
+    text-decoration: underline; /* Underline text on hover */ 
+}
+
+#contactDetails {
+    position: fixed;
+    top: 200px;
+    left: 350px;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid cyan;
+    transition: 0.15ms;
+}
+
+.email, .phone {
+    cursor: pointer;
+}

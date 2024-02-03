@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Experience</title>
+
+        <link rel="stylesheet" href="styles/header.css">
+
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: black;
+                margin: 0;
+                padding: 20px;
+            }
+
+            .timeline {
+                position: relative;
+                margin-left: 20px;
+                margin-top: 100px;
+            }
+
+            .timeline-item {
+                margin-bottom: 40px;
+            }
+
+            .timeline-dot {
+                position: absolute;
+                background-color: #efeb13;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                left: -30px;
+            }
+
+            .timeline-date {
+                margin-bottom: 5px;
+                font-style: italic;
+                color: #efeb13;
+            }
+
+            .timeline-content {
+                background-color: #07707d;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                border-left: 3px solid #efeb13;
+            }
+
+            .timeline-content h3 {
+                margin-top: 0;
+                color: white;
+            }
+
+            .timeline-content h4 {
+                margin-bottom: 10px;
+                color: #eaeaea;
+            }
+
+            .timeline-content p {
+                color: black;
+                font-weight: 600;
+            }
+
+            .timeline-content ul {
+                color: black;
+                font-weight: 500;
+            }
+
+            .certificate {
+                color: black;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <div class="center-header">
+              <div>Experience/Internships</div>
+            </div>
+            <div class="right-header">
+              <div id="home">Home</div>
+            </div>
+          </header>
+
+          <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">August 2022 – May 2023</div>
+                <div class="timeline-content">
+                    <h3>Teaching Assistant, CS Department</h3>
+                    <h4>University of Memphis, Memphis, TN</h4>
+                    <p>Collaborated closely with Prof. Kriangsiri ("TOP") Malasri to facilitate the educational experience for students enrolled in 'Intro. to Programming (using Python)' course, ensuring smooth lab sessions and enhanced learning outcomes (during Fall 2022).</p>
+                    <p>Demonstrated a strong commitment by meticulously grading and providing constructive feedback on students' assignments and exams, enrolled in the course “Database Management Systems” under Prof. Fatih Sen (during Spring 2023).</p>
+                    <p>Utilized strong technical knowledge in Python programming and MySQL to assist students in mastering these subjects.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">June 2021 – October 2021</div>
+                <div class="timeline-content">
+                    <h3>AWS Cloud Intern</h3>
+                    <h4>F13 Technologies, India (Remote)</h4>
+                    <p>Acquired comprehensive knowledge of cloud computing fundamentals, including cloud migration techniques and the significance of a well-architected framework for optimizing cloud-based solutions.</p>
+                    <p>Expanded expertise in Amazon Web Services (AWS) through in-depth learning about the AWS Partner Network (APN) and hands-on implementation of various AWS services, such as EC2 instances, S3 storage, Amazon RDS, Amazon Lambda, and Amazon VPN.</p>
+                    <p>Completed 6 APN training courses - <a class="certificate" href="https://drive.google.com/drive/folders/1njzvgdiLyuLzut01okoeXsV0qJ0_LomB?usp=sharing" target="_blank">Certificates</a>.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">November 2020 – January 2021</div>
+                <div class="timeline-content">
+                    <h3>Android App Developer Intern</h3>
+                    <h4>Ontraq, US (Remote)</h4>
+                    <p>Demonstrated proficiency in the Android Studio environment, utilizing Java, HTTP, and RestClient APIs to develop robust applications for Android platforms.</p>
+                    <p>Successfully completed and deployed three diverse projects, each showcasing distinct technical skills and creativity:</p>
+                    <ul>
+                        <li>SimpleTweet: Utilized the Twitter API to create a simple yet functional tweet application.</li>
+                        <li>Parstagram: Designed and developed an Instagram-like application, offering users an engaging platform for photo sharing and interaction.</li>
+                        <li>Flixter: Crafted a comprehensive movie application, providing users with a feature-rich interface for discovering and viewing films.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        document.getElementById('home').addEventListener('click', function() {
+                window.location.href = 'index.html';
+        });
+    </script>
+</html>

@@ -1,0 +1,24 @@
+.sidebar {
+    background-color: rgb(7, 57, 57);
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 100px;
+    width: 260px;
+  }
+
+.sidebar-option {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+
+    color: white;
+}
+
+.sidebar-option:hover {
+  background-color: gray; /*Change background color on hover*/
+}
